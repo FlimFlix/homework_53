@@ -2,12 +2,24 @@ import React from 'react';
 import './styles.css'
 
 
-function Numbers() {
+function Header(props) {
     return (
-        <div className='container'>
-            <h1>Numbers</h1>
+        <div className='header'>
+            <div className='container'>
+                <h1>Добро пожаловать в лотерейный розгрыш с призами! <span>(нет)</span></h1>
+            </div>
+        </div>
+
+    )
+}
+
+function Number(props) {
+    return (
+        <div className='elem'>
+            <p>{props.number}</p>
         </div>
     )
 }
 
-export {Numbers}
+
+export {Number, Header}
